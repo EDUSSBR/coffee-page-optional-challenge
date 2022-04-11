@@ -1,44 +1,68 @@
+*,*::after,*::before{
+    box-sizing: inherit;
+}
+
 * {
-    margin:0;
-    padding:0;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
+
+
+
 }
 
 :root {
-    --backgrond: #000;
-    --text-color: #FFF;
-    --button: #8257E5;
-    --border: #29292E;
-    --border-menu-mobile: #A8A8B3;
-    --text-color-menu-mobile: #E1E1E6;
-  }
+    --background: #000;
+    --text-color: #fff;
+    --button: #8257e5;
+    --button-hover: #9281ce;
+    --border: #29292e; 
+    --border-menu-mobile: #a8a8b3;
+    --color-menu-mobile: #e1e1e6;
+    width: 100%;
+}
+html {
+    
+    max-width: max-content;
+}
 
 @media (max-width: 1080px) {
     html {
         font-size: 93.75%;
     }
 }
-@media (max-width: 720px) {
+@media (max-width: 705px) {
     html {
         font-size: 87.5%;
     }
 }
 
-
 body {
-    background: var(--black);
-    color: var(--white);
+    max-width: max-content;
+    background: var(--background);
 }
 
-body, input, textarea, select, button {
-    font: 400 1rem "Manrope", sans-serif;
+body,
+input,
+textarea,
+select,
+button {
+    color:var(--text-color);
+    font: 700 1rem "Manrope", sans-serif;
 }
 
 button {
-    cursor:pointer;
+    cursor: pointer;
 }
 
-a { 
-    color:inherit;
-    text-decoration:none;
+
+#__next{
+    max-width: max-content;
+    margin: 0 auto;
 }
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+

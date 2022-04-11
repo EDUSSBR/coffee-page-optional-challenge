@@ -1,0 +1,16 @@
+.Container {
+    border: 1px solid var(--button);
+    color:var(--color-menu-mobile);
+    background: transparent;
+    border-radius: calc(6%); 
+    padding: calc(1.5vw + 0.05rem);
+
+    img {
+        width: 0.5em;
+    }
+
+    &:hover {
+        color:var(--button-hover);
+        border-color: white;
+    }
+}
